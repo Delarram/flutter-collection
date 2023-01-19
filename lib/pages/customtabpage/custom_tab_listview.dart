@@ -2,6 +2,7 @@
 
 
 import 'package:flutter/material.dart';
+import 'package:fluttercollection/widget.dart';
 
 
 class LabCenterNameList extends StatelessWidget {
@@ -43,10 +44,10 @@ class LabCenterNameList extends StatelessWidget {
               ,
               children: [
                 SizedBox(height: 15,),
-                Text(
+                CustomTextView(
                   fontColor:
                   currentIndex == index ? Colors.teal: Colors.black87,
-                   nameList[index],
+                   text:nameList[index],
                 ),Spacer(),
                 Container(
                   height: 2,
@@ -60,7 +61,7 @@ class LabCenterNameList extends StatelessWidget {
       },
       separatorBuilder: (BuildContext context, int index) {
         return SizedBox(
-          width: 15.w,
+          width: 15,
         );
       },
     );
