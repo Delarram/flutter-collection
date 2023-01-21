@@ -2,7 +2,7 @@
 
 
 import 'package:flutter/material.dart';
-import 'package:fluttercollection/widget.dart';
+import 'package:fluttercollection/widget/widget.dart';
 
 
 class LabCenterNameList extends StatelessWidget {
