@@ -1,5 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:fluttercollection/pages/profile_page/dummy_data.dart';
+import 'package:fluttercollection/pages/profile_page/profile_body_section.dart';
 import 'package:fluttercollection/widget/widget.dart';
 
 class ProfilePage extends StatelessWidget {
@@ -20,7 +22,7 @@ class ProfilePage extends StatelessWidget {
         child: Column(
           children: [
             Stack(
-              clipBehavior:Clip.none ,
+              clipBehavior: Clip.none,
               children: [
                 Container(
                   height: 150,
@@ -45,14 +47,20 @@ class ProfilePage extends StatelessWidget {
                     decoration: BoxDecoration(
                         color: Colors.black,
                         shape: BoxShape.circle,
-                        border: Border.all(width: 3, color: Colors.white70)),
+                        border: Border.all(
+                            width: 3, color: Colors.white70,
+                        ),
+                    ),
                   ),
-                )
+                ),
               ],
             ),
-
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 12,vertical: 30),
+              child: ProfileBodySection(itemList:DummyData.accountCategoryListVO),
+            ),
           ],
-        ),
+        )
       ),
     );
   }

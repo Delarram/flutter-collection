@@ -1,14 +1,11 @@
 import 'package:flutter/material.dart';
-
 import '../../widget/widget.dart';
 import 'account_category_listvo.dart';
 
-
-
-class SettingWidget extends StatelessWidget {
+class ProfileBodySection extends StatelessWidget {
   final String? text;
   final List<AccountCategoryListV0> itemList;
-  const SettingWidget({
+  const ProfileBodySection({
     Key? key, required this.itemList, this.text,
   }) : super(key: key);
   @override
@@ -28,12 +25,19 @@ class SettingWidget extends StatelessWidget {
               padding:  EdgeInsets.symmetric(horizontal: 10,vertical: 3),
               child: Row(
                 children: [
-                  ImageIcon(AssetImage(itemList[index].image),color: Colors.black,size: 20,
-                  ),SizedBox(width: 10,),
+                  Container(
+                    height: 30,width: 30,
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      color: Colors.white70,
+                    ),
+                    child:Icon(itemList[index].icon,color: Colors.black,),
+                  ),
+                  SizedBox(width: 10,),
                   CustomTextView(text: itemList[index].title,fontSize: 13),
                   const Spacer(),
-                  IconButton(onPressed: () {
-                  }, icon: Icon(Icons.arrow_forward_ios,size: 18,))
+                  IconButton(onPressed: (){
+                  }, icon:const Icon(Icons.arrow_forward_ios,size:18))
                 ],
               ),
             ),
@@ -41,7 +45,7 @@ class SettingWidget extends StatelessWidget {
         );
       }, separatorBuilder: (BuildContext context, int index) {
       return SizedBox(
-          height: 4
+          height: 4,
       );
     },
     );

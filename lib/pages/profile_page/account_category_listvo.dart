@@ -1,6 +1,8 @@
+import 'package:flutter/cupertino.dart';
+
 class AccountCategoryListV0{
   String title;
-  String image;
+  IconData icon;
   Function onPress;
-  AccountCategoryListV0(this.title,this.image,this.onPress);
+  AccountCategoryListV0(this.title,this.icon,this.onPress);
 }
