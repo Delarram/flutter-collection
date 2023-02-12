@@ -3,8 +3,8 @@ import 'package:fluttercollection/resources/color_constant.dart';
 
 
 
-class BookingTable extends StatelessWidget {
-  const BookingTable({Key? key, required this.onTapTable}) : super(key: key);
+class TableSection extends StatelessWidget {
+  const TableSection({Key? key, required this.onTapTable}) : super(key: key);
   final VoidCallback onTapTable;
   @override
   Widget build(BuildContext context) {

@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:fluttercollection/pages/profile_page/profile_page.dart';
+import 'package:fluttercollection/pages/table/table_page.dart';
 import 'package:fluttercollection/pages/tabpage/tab_page.dart';
 
 void main() {
@@ -12,8 +14,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-
-      home:TabPage()
+      debugShowCheckedModeBanner: false,
+      home:ProfilePage()
     );
   }
 }
