@@ -228,12 +228,7 @@ class BottomNavBarView extends StatelessWidget {
                     shape: BoxShape.circle,
                     color: cPrimaryThree,
                     boxShadow: [
-                      // BoxShadow(
-                      //   color: Colors.white.withOpacity(0.3),
-                      //   spreadRadius: 5,
-                      //   blurRadius: 7,
-                      //   offset: const Offset(0, 2), // changes position of shadow
-                      // ),
+
                     ],
                   ),
                   child: Center(
