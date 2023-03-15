@@ -32,11 +32,11 @@ class CustomButtonView extends StatelessWidget {
       height: height,
       decoration: BoxDecoration(
           border: Border.all(width: 1,color: borderColor??Colors.grey),
-          borderRadius: BorderRadius.circular(borderRadius??11.r)),
+          borderRadius: BorderRadius.circular(borderRadius??11)),
       child: MaterialButton(
         color: buttonColor,
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(borderRadius??10.r),
+          borderRadius: BorderRadius.circular(borderRadius??10),
         ),
         onPressed: () {
           onPressed();
