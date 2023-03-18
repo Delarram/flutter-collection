@@ -60,7 +60,6 @@ class ChooseCategoryPage extends StatelessWidget {
                   ),
                   GestureDetector(
                       onTap: () {
-                        bloc.onChangePress();
                       },
                       child: Padding(
                         padding:
@@ -76,6 +75,18 @@ class ChooseCategoryPage extends StatelessWidget {
                         ),
                       ))
                 ],
+              ),
+
+            ),
+            const Align(
+              alignment: Alignment.centerRight,
+              child: Padding(
+                padding:
+                EdgeInsets.symmetric(horizontal: 5, vertical: 20),
+                child: CustomTextView(
+                  text: "Chosen Tests",
+                  textAlign: TextAlign.right,
+                ),
               ),
             ),
           ],
