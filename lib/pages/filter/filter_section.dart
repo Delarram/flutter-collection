@@ -31,27 +31,27 @@ class ChooseTestListFilterSection extends StatelessWidget {
             color: Colors.white,
             border: Border.symmetric(
                 horizontal: BorderSide(color: Colors.black26))),
-        padding: EdgeInsets.symmetric(
+        padding: const EdgeInsets.symmetric(
           horizontal: 15,
         ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
-            SizedBox(
+            const SizedBox(
               height: 15,
             ),
             const CustomTextView(
               text: "Search filter by:",
               fontColor: cPrimaryThree,
             ),
-            SizedBox(height: 15,),
+            const SizedBox(height: 15,),
             const CustomTextView(
               text: "Choose books",
               fontWeight: FontWeight.w500,
               fontColor: cBackGroundTwo,
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             Padding(
