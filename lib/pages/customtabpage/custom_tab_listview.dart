@@ -40,15 +40,14 @@ class LabCenterNameList extends StatelessWidget {
               color: currentIndex == index ? Colors.white : Colors.white,
             ),
             child: Column(
-              mainAxisSize: MainAxisSize.min
-              ,
+              mainAxisSize: MainAxisSize.min,
               children: [
                 SizedBox(height: 15,),
                 CustomTextView(
                   fontColor:
                   currentIndex == index ? Colors.teal: Colors.black87,
                    text:nameList[index],
-                ),Spacer(),
+                ),const Spacer(),
                 Container(
                   height: 2,
                   width: 60,
