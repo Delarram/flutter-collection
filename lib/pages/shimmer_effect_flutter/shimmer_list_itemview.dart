@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 
-class Shimmer_listItem_view extends StatelessWidget {
-  const Shimmer_listItem_view({
+class ShimmerListItemView extends StatelessWidget {
+  const ShimmerListItemView({
     Key? key,
     required this.image,
   }) : super(key: key);
