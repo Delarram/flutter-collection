@@ -9,7 +9,8 @@ class ShimmerBloc extends ChangeNotifier{
      Future.delayed(Duration(seconds: 2),(){
        isLoading = false;
      });
+     notifyListeners();
    }
-   
+
 
 }

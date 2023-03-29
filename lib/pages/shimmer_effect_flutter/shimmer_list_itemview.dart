@@ -18,7 +18,7 @@ class ShimmerListItemView extends StatelessWidget {
             SizedBox(
               height: 120,
               width: 120,
-              child: Image.asset(image),
+              child: Image.network(image),
             ),
             const SizedBox(width: 15),
             Expanded(
