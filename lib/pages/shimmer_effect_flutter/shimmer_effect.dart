@@ -15,15 +15,15 @@ class ShimmerEffect extends StatelessWidget {
           children: [
             Skeleton(width: 80,),
             SizedBox(height: 8,),
-            Skeleton(),
+            Skeleton(height: 20,),
             SizedBox(height: 8,),
-            Skeleton(),
+            Skeleton(height: 20,),
             SizedBox(height: 8,),
             Row(
               children: [
-                Expanded(child: Skeleton()),
+                Expanded(child: Skeleton(height: 20,width: 120,)),
                 SizedBox(width: 8,),
-                Expanded(child: Skeleton())
+                Expanded(child: Skeleton(height: 20,width: 120,))
               ],
             )
           ],

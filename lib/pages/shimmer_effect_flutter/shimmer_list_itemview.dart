@@ -15,12 +15,7 @@ class ShimmerListItemView extends StatelessWidget {
       children: [
         Row(
           children: [
-            SizedBox(
-              height: 120,
-              width: 120,
-              child: Image.network(image),
-            ),
-            const SizedBox(width: 15),
+            Image.network(image,height: 80,width: 150,),
             Expanded(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
