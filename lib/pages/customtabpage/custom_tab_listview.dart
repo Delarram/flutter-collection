@@ -5,8 +5,8 @@ import 'package:flutter/material.dart';
 import 'package:fluttercollection/widget/widget.dart';
 
 
-class NameList extends StatelessWidget {
-  const NameList({
+class LabCenterNameList extends StatelessWidget {
+  const LabCenterNameList({
     Key? key,
     required this.onClick,
     required this.currentIndex,
@@ -42,7 +42,7 @@ class NameList extends StatelessWidget {
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
-                const SizedBox(height: 15,),
+                SizedBox(height: 15,),
                 CustomTextView(
                   fontColor:
                   currentIndex == index ? Colors.teal: Colors.black87,
